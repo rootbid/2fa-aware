@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Absurd monstosity of Unicode.
+-->
+<html>
+
+<head>
+	<title>Unicode & Homographs</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="static/assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section class="intro">
+			<header>
+				<h1>Unicode: Homographs</h1>
+				<p>"The Human race will begin solving its problems on the day that it ceases taking itself so
+					seriously." - Malaclypse the Younger.
+					<ul class="actions">
+						<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+					</ul>
+			</header>
+			<div class="content">
+				<span class="image fill" data-position="center"><a
+						href="https://imgs.xkcd.com/comics/unicode_2x.png"><img
+							src="https://imgs.xkcd.com/comics/unicode_2x.png" alt="" /></a></span>
+			</div><br><br>
+		</section>
+
+		<!-- Section -->
+		<section id="first">
+			<header>
+				<h2>What is Unicode?</h2>
+			</header>
+			<div class="content">
+				<p><strong>Unicode (consortium)</strong> has a big table that assigns numbers (codepoints) to a wide
+					variety of characters you might want to use to write text. We often say “Unicode” when we mean “not
+					ASCII”, but that’s silly since of course all of ASCII is also included in Unicode.<br>
+					Unicode is divided into seventeen <a
+						href="https://en.wikipedia.org/wiki/Plane_(Unicode)">planes</a>,
+					numbered zero through sixteen. Plane 0 is also called the Basic Multilingual Plane, or just BMP, so
+					called because it contains the alphabets of most modern languages. The other planes are much less
+					common and are sometimes informally referred to as the astral planes.</p>
+				<!-- <span class="image main"><img src="static/images/pic02.jpg" alt="" /></span> -->
+			</div>
+		</section>
+
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>Some definitions</h2>
+			</header>
+			<div class="content">
+				<p><strong>UTF-8</strong> is an encoding, a way of turning a sequence of codepoints into bytes. All
+					Unicode codepoints can be encoded in UTF-8. ASCII is also an encoding, but only supports 128
+					characters, mostly English letters and punctuation.</p>
+				<p>A <strong>character</strong> is a fairly fuzzy concept. Letters and numbers and punctuation are
+					characters. But so are Braille and a pile of poo and halves of flags; a thing in the Unicode table
+					somewhere.</p>
+				<p>A <strong>glyph</strong> is a visual representation of some symbol, provided by a font. It might
+					represent a single character, or it might represent several. Or both!</p>
+				<p>A <strong>homograph</strong> (from the Greek: "written the same")<br>
+					In this case, it's where two unicode characters are rendered the same in a certain rendering context
+					or font.</p>
+			</div>
+		</section>
+
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>Duis sed adpiscing veroeros amet</h2>
+			</header>
+			<div class="content">
+				<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare
+					velit lacus, ac varius enim lorem ullamcorper dolore.</p>
+			</div>
+		</section>
+
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>More resources,</h2>
+			</header>
+			<div class="content">
+				<p>There is so much depth in this, so feel free to explore.</p>
+				<p>There are some resources(probably tracked in a gist repository), which fill me with the hackers
+					delight while reading about these things.</p>
+				<form action="{{ url_for('login') }} ">
+					<ul class="actions">
+						<li><input type="submit" value="Gist repository" class="button large" /></li>
+					</ul>
+				</form>
+			</div>
+			<footer>
+				<ul class="items">
+					<li>
+						<h3>Email</h3>
+						<a href="#">21deepansh@gmai.com</a>
+					</li>
+				</ul>
+			</footer>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="static/assets/js/jquery.min.js"></script>
+	<script src="static/assets/js/jquery.scrolly.min.js"></script>
+	<script src="static/assets/js/browser.min.js"></script>
+	<script src="static/assets/js/breakpoints.min.js"></script>
+	<script src="static/assets/js/util.js"></script>
+	<script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
