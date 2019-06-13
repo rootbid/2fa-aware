@@ -32,3 +32,6 @@ def authorization():
         "https://gist.github.com/rootbid/87e0723cc1707188e86b9724aa64059f"
     )
 
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=80)
