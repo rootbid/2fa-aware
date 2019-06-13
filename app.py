@@ -1,11 +1,15 @@
+import sys
 from flask import Flask, render_template, request, redirect
+
+
+print(sys.getdefaultencoding())
 
 app = Flask(__name__)
 
 
 @app.route("/homographs")
 def homographs():
-    return render_template("index.html")
+    return render_template("index.html").encode("utf-16")
 
 
 @app.route("/auth_redirect=github.com")
